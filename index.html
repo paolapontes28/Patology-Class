@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogo da Memória da Hepatite C</title>
+
+  <!-- Link para o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Modal inicial -->
+  <div id="start-modal" class="modal-overlay">
+    <div class="modal">
+      <h1>Jogo da Memória - Hepatite C</h1>
+      <p> Combine o conceito com sua explicação.<br> Clique em "Jogar" para iniciar!</p>
+      <button id="btn-start" class="start-btn">Jogar</button>
+    </div>
+  </div>
+
+  <div class="app" role="application" aria-label="Jogo da memória sobre Hepatite C">
+    <header>
+      <h1>Jogo da Memória</h1>
+      <div class="controls">
+        <div id="moves">Movimentos: 0</div>
+        <button id="btn-restart">Reiniciar</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="board" class="board" tabindex="0" aria-live="polite"></div>
+    </main>
+
+    <div class="footer">
+      <div>Combine o texto com sua justificativa.</div>
+      <div> Pares: <span id="pairs-count" class="highlight"></span></div>
+    </div>
+  </div>
+
+  <!-- Script externo -->
+  <script src="game.js"></script>
+
+</body>
+</html>
